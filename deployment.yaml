@@ -27,8 +27,8 @@ spec:
   selector:
     app: note-todo
   ports:
-    - protocol: TCP
-       port: 80           # Cluster-internal port (optional)
-      targetPort: 8000   # Port your app is listening inside the pod
-      nodePort: 30080    # External port on EC2 instance
+     - protocol: TCP
+      port: 80
+      targetPort: 8000
+      nodePort: 30080
   type: NodePort
